@@ -10,10 +10,12 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "CPMemo.h"
+#import "CPMeterTable.h"
 @interface CPRecordController()<AVAudioRecorderDelegate>
 @property (strong, nonatomic) AVAudioPlayer  *player;
 @property (strong, nonatomic) AVAudioRecorder  *recorder;
 @property (copy, nonatomic) CPRecordingStopCompletionHandler completionHandler;
+@property (strong, nonatomic) CPMeterTable  *tables;
 @end
 
 @implementation CPRecordController
@@ -47,6 +49,9 @@
         {
             NSLog(@"fail to initialize recorder: %@",[error localizedDescription]);
         }
+        self.recorder.meteringEnabled = YES;
+        
+        _tables = [[CPMeterTable alloc] init];
         
     }
     return self;
@@ -117,6 +122,17 @@
     
 }
 
+
+
+-(CGFloat)level{
+    
+    [self.recorder updateMeters];
+    
+    float avgPower = [self.recorder averagePowerForChannel:0];
+    
+    return [self.tables valueForPower:avgPower];
+    
+}
 
 -(NSString *)currentTime
 {

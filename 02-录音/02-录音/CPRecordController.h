@@ -13,6 +13,7 @@ typedef void (^CPRecordingSaveCompletionHandler)(BOOL, id);
 
 @interface CPRecordController : NSObject
 @property (copy, nonatomic) NSString  *currentTime;
+@property (assign, nonatomic) CGFloat level;
 -(BOOL)record;
 -(void)pause;
 -(void)stopWithCompletionHandler:(CPRecordingStopCompletionHandler)handler;

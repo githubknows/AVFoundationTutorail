@@ -17,6 +17,7 @@
 		C4E491321FF61E26005448E4 /* _2___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E491311FF61E26005448E4 /* _2___UITests.m */; };
 		C4E491411FF61E4D005448E4 /* CPRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E491401FF61E4D005448E4 /* CPRecordController.m */; };
 		C4E491441FF62251005448E4 /* CPMemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E491431FF62251005448E4 /* CPMemo.m */; };
+		C4E491471FF64366005448E4 /* CPMeterTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E491461FF64366005448E4 /* CPMeterTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		C4E491401FF61E4D005448E4 /* CPRecordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPRecordController.m; sourceTree = "<group>"; };
 		C4E491421FF62251005448E4 /* CPMemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPMemo.h; sourceTree = "<group>"; };
 		C4E491431FF62251005448E4 /* CPMemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPMemo.m; sourceTree = "<group>"; };
+		C4E491451FF64366005448E4 /* CPMeterTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPMeterTable.h; sourceTree = "<group>"; };
+		C4E491461FF64366005448E4 /* CPMeterTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPMeterTable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				C4E491401FF61E4D005448E4 /* CPRecordController.m */,
 				C4E491421FF62251005448E4 /* CPMemo.h */,
 				C4E491431FF62251005448E4 /* CPMemo.m */,
+				C4E491451FF64366005448E4 /* CPMeterTable.h */,
+				C4E491461FF64366005448E4 /* CPMeterTable.m */,
 				C4E491131FF61E26005448E4 /* Main.storyboard */,
 				C4E491161FF61E26005448E4 /* Assets.xcassets */,
 				C4E491181FF61E26005448E4 /* LaunchScreen.storyboard */,
@@ -278,6 +283,7 @@
 				C4E491121FF61E26005448E4 /* ViewController.m in Sources */,
 				C4E491411FF61E4D005448E4 /* CPRecordController.m in Sources */,
 				C4E4911D1FF61E26005448E4 /* main.m in Sources */,
+				C4E491471FF64366005448E4 /* CPMeterTable.m in Sources */,
 				C4E491441FF62251005448E4 /* CPMemo.m in Sources */,
 				C4E4910F1FF61E26005448E4 /* AppDelegate.m in Sources */,
 			);
